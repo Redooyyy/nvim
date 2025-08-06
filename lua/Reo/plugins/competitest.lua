@@ -59,23 +59,45 @@ return {
 				},
 			},
 			popup_ui = {
-				total_width = 0.8,
-				total_height = 0.8,
+				total_width = 0.5,
+				total_height = 0.9,
+				--				layout = {
+				--					{ 4, "tc" },
+				--					{ 5, { { 1, "so" }, { 1, "se" } } },
+				--					{ 5, { { 1, "eo" }, { 1, "si" } } },
+				--				},
 				layout = {
-					{ 4, "tc" },
-					{ 5, { { 1, "so" }, { 1, "si" } } },
-					{ 5, { { 1, "eo" }, { 1, "se" } } },
+					{
+						1,
+						{
+							{ 1, "tc" },
+							{ 1, "si" },
+						},
+					},
+					{
+						1,
+						{
+							{ 1, "se" },
+							{
+								1,
+								{
+									{ 1, "so" },
+									{ 1, "eo" },
+								},
+							},
+						},
+					},
 				},
 			},
 			split_ui = {
 				position = "right",
 				relative_to_editor = true,
-				total_width = 0.3,
-				vertical_layout = {
-					{ 1, "tc" },
-					{ 1, { { 1, "so" }, { 1, "eo" } } },
-					{ 1, { { 1, "si" }, { 1, "se" } } },
-				},
+				total_width = 0.5,
+				--vertical_layout = {
+				--	{ 1, "tc" },
+				--	{ 1, { { 1, "so" }, { 1, "eo" } } },
+				--	{ 1, { { 1, "si" }, { 1, "se" } } },
+				--},
 				total_height = 0.4,
 				horizontal_layout = {
 					{ 2, "tc" },
